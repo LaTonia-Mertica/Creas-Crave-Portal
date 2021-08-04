@@ -1,0 +1,153 @@
+/* @font-face {
+  font-family: "Glacial Indifference";
+  src: url(fonts/GlacialIndifference-Regular.otf) format("otf");
+  src: url(fonts/GlacialIndifference-Bold.otf) format("otf");
+} */
+
+body {
+  font-family: "Glacial Indifference", sans-serif;
+
+  margin: 0;
+  overflow-x: hidden;
+  border-bottom: 17px solid white;
+}
+
+/*NAVBAR CODE*/
+#navbarSupportedContent {
+  justify-content: flex-end;
+}
+
+.bglmccsblue {
+  background-color: #5ce1e6;
+  opacity: 0.93;
+
+  height: 157px;
+  margin-top: -50px;
+}
+
+.navbar-light .navbar-brand {
+  color: white !important;
+  margin-left: 22px;
+}
+/* 
+#shopCart {
+  filter: invert();
+  padding-right: 10px;
+  padding-top: 5px;
+
+  margin-right: 207px;
+} */
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus,
+.navbar-toggler-icon {
+  filter: invert();
+}
+
+.navbar-toggler {
+  border: transparent;
+}
+
+.container-fluid {
+  margin-top: 44px;
+  margin-left: 0;
+}
+
+.logoImg {
+  margin-bottom: 7px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.noPadding {
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+/*LOGIN PAGE CODE*/
+#input-groupForm {
+  justify-content: center;
+}
+
+form > input::placeholder,
+#emailInput {
+  max-width: 50%;
+}
+
+#mainLoginReturnDiv {
+  background-color: #545454;
+}
+
+#emailPwRow,
+#resets {
+  text-align: center;
+}
+
+label {
+  margin-right: 11px;
+  padding-bottom: 67px;
+}
+
+input.form-control#email,
+input.form-control#password {
+  padding: 17px;
+}
+
+div > p#createAccount > a,
+#createAccount,
+#email,
+#password,
+#resets {
+  color: #5ce1e6;
+  font-size: small;
+  text-align: center;
+  text-decoration: none;
+}
+
+button.btn-dark {
+  font-size: larger;
+  letter-spacing: 1.3px;
+
+  color: black;
+  background-color: white;
+  border: 0;
+
+  padding: 22px 44px;
+  margin-bottom: 11px;
+}
+
+/*CREAS CRAVE BUY NOW BUTTON CODE*/
+button.btn-dark:hover {
+  background-color: #5ce1e6;
+}
+
+/*CENTER CLASS & LOGIN CODE*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*CUSTOMER ACCT SETUP CODE*/
+input#firstName.form-control,
+input#lastName.form-control,
+input#address1.form-control,
+input#address2.form-control,
+input#city.form-control,
+#state,
+input#zipCode.form-control,
+input#phoneNumber.form-control,
+input#emailAddress.form-control,
+form > input::placeholder,
+#searchSubmitBtn,
+#emailInput {
+  font-size: smaller;
+}
+
+input#phoneNumber.form-control,
+input#emailAddress.form-control {
+  width: 387px;
+}
