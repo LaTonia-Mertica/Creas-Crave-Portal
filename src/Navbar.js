@@ -1,5 +1,5 @@
 // import shoppingCartImg from "./images/shoppingCart.png";
-import headShoulder from "./images/headShoulder.png";
+// import headShoulder from "./images/headShoulder.png";
 
 const NavBar = () => {
   return (
