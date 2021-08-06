@@ -7,7 +7,11 @@ const NavBar = () => {
       <div className="row">
         <nav className="navbar navbar-expand-lg fixed-top navbar-light bglmccsblue">
           <div className="container-fluid">
-            <a className="navbar-brand" href={{ NavBar }}>
+            {/* <a className="navbar-brand" href={{ NavBar }}> */}
+            <a
+              className="navbar-brand"
+              href={"https://latoniamertica.dev/Creas-Crave-Capstone/"}
+            >
               CREAS CRAVE
             </a>
             <button
@@ -53,7 +57,8 @@ const NavBar = () => {
                     id="shopCart"
                   />
                 </div> */}
-                <div className="col-1">
+
+                {/* <div className="col-1">
                   <img
                     className="img-responsive"
                     style={{
@@ -66,7 +71,7 @@ const NavBar = () => {
                     alt="Head and Shoulders"
                     id="headShoulder"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

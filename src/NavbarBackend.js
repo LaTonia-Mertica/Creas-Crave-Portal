@@ -6,7 +6,11 @@ const NavbarBackend = () => {
       <div className="row">
         <nav className="navbar navbar-expand-lg fixed-top navbar-light bglmccsblue">
           <div className="container-fluid">
-            <a className="navbar-brand" href={{ NavbarBackend }}>
+            {/* <a className="navbar-brand" href={{ NavbarBackend }}> */}
+            <a
+              className="navbar-brand"
+              href={"https://latoniamertica.dev/Creas-Crave-Capstone/"}
+            >
               CREAS CRAVE
             </a>
             <div className="dropdown">
