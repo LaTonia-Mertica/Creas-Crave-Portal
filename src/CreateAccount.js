@@ -1,4 +1,4 @@
-import NavbarBackend from "./NavbarBackend";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useState, useRef } from "react";
 
@@ -56,11 +56,11 @@ const CreateAccount = ({ links }) => {
       className="container-fluid"
       style={{ marginTop: -44, backgroundColor: "#545454" }}
     >
-      <NavbarBackend />
-      <div className="row" style={{ marginLeft: 325 }}>
-        <div>
+      <Navbar />
+      <div className="row">
+        <div style={{ marginLeft: 110 }}>
           <form onSubmit={addCustomer}>
-            <div className="row" style={{ marginTop: -425 }}>
+            <div className="row" style={{ marginTop: 125 }}>
               <div className="col-5">
                 <label
                   htmlFor="firstName"
@@ -272,7 +272,7 @@ const CreateAccount = ({ links }) => {
               </div>
             </div>
 
-            <div className="col">
+            <div className="col-6">
               <div>
                 <label
                   htmlFor="emailAddress"
@@ -298,8 +298,10 @@ const CreateAccount = ({ links }) => {
                   style={{
                     fontSize: 21,
                     fontWeight: 700,
-                    marginTop: -25,
-                    marginLeft: 450,
+                    marginTop: -67,
+                    marginLeft: 400,
+                    marginRight: 150,
+                    marginBottom: 50,
                     paddingTop: 17,
                     paddingBottom: 17,
                     paddingLeft: 37,

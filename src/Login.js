@@ -31,7 +31,9 @@ const Login = () => {
 
             <div>
               <p id="createAccount">
-                <a href="/">create new account</a>
+                <a href="/createaccount" id="createNewAccount">
+                  create new account
+                </a>
               </p>
             </div>
 

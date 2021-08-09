@@ -107,6 +107,11 @@ div > p#createAccount > a,
   text-decoration: none;
 }
 
+#createNewAccount:hover,
+#resets:hover {
+  color: #360836;
+}
+
 button.btn-dark {
   font-size: larger;
   letter-spacing: 1.3px;
