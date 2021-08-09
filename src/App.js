@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Cart from "./Cart";
 import Creatives from "./Creatives";
+import CreateAccount from "./CreateAccount";
 import CreativesInCart from "./CreativesInCart";
 import Customers from "./Customers";
 import Disclaimer from "./Disclaimer";
@@ -21,6 +22,10 @@ function App() {
         <Switch>
           <Route path="/cart">
             <Cart />
+          </Route>
+
+          <Route path="/createaccount">
+            <CreateAccount />
           </Route>
 
           <Route path="/creatives">
