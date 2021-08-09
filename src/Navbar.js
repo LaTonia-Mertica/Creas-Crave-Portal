@@ -14,7 +14,7 @@ const NavBar = () => {
             >
               CREAS CRAVE
             </a>
-            <button
+            {/* <button
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -29,9 +29,9 @@ const NavBar = () => {
             <div
               className="collapse navbar-collapse navbar-left"
               id="navbarSupportedContent"
-            >
-              <div className="row" style={{ marginTop: 10, marginRight: 20 }}>
-                <div className="col">
+            > */}
+            {/* <div className="row" style={{ marginTop: 10, marginRight: 20 }}> */}
+            {/* <div className="col">
                   <form className="d-flex">
                     <input
                       className="form-control me-2"
@@ -47,8 +47,8 @@ const NavBar = () => {
                       search
                     </button>
                   </form>
-                </div>
-                {/* <div className="col-1" style={{ marginRight: 20 }}>
+                </div> */}
+            {/* <div className="col-1" style={{ marginRight: 20 }}>
                   <img
                     className="img-responsive"
                     style={{ height: 37 }}
@@ -58,7 +58,7 @@ const NavBar = () => {
                   />
                 </div> */}
 
-                {/* <div className="col-1">
+            {/* <div className="col-1">
                   <img
                     className="img-responsive"
                     style={{
@@ -72,8 +72,8 @@ const NavBar = () => {
                     id="headShoulder"
                   />
                 </div> */}
-              </div>
-            </div>
+            {/* </div> */}
+            {/* </div> */}
           </div>
         </nav>
       </div>
