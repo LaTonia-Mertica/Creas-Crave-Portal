@@ -302,8 +302,9 @@ const Customers = ({ links }) => {
                   style={{
                     fontSize: 21,
                     fontWeight: 700,
-                    marginTop: -25,
-                    marginLeft: 450,
+                    marginTop: -67,
+                    marginLeft: 400,
+                    marginRight: 150,
                     paddingTop: 17,
                     paddingBottom: 17,
                     paddingLeft: 37,
