@@ -13,6 +13,7 @@ import Login from "./Login";
 import NavbarBackend from "./NavbarBackend";
 import Purchases from "./Purchases";
 import Sidebar from "./Sidebar";
+// import Subscribers from "./Subscribers";
 import Users from "./Users";
 
 function App() {
@@ -62,37 +63,38 @@ function App() {
 
           <Route path="/sidebar">
             <Sidebar
-              links={[
-                "purchase history",
-                "favorite creatives",
-                "items in cart",
-                "delete account",
-                "logout",
-              ]}
+            // links={[
+            //   "purchase history",
+            //   "favorite creatives",
+            //   "items in cart",
+            //   "delete account",
+            //   "logout",
+            // ]}
             />
           </Route>
 
           <Route path="/sidebarcreatives">
             <Sidebar
-              links={[
-                "customers",
-                "purchases",
-                "favorites",
-                "abandoned carts",
-                "logout",
-              ]}
+            // links={[
+            //   "customers",
+            //   "purchases",
+            //   "favorites",
+            //   "abandoned carts",
+            //   "logout",
+            // ]}
             />
           </Route>
 
           <Route path="/sidebarpurchases">
             <Sidebar
-              links={[
-                "customers",
-                "creatives sold",
-                "sales amounts",
-                "sold dates",
-                "logout",
-              ]}
+            // links={[
+            //   "customers",
+            //   "creatives sold",
+            //   "sales amounts",
+            //   "sold dates",
+            //   "logout",
+            //   ,
+            // ]}
             />
           </Route>
 
@@ -113,6 +115,10 @@ function App() {
                 "logout",
               ]}
             />
+          </Route> */}
+
+          {/* <Route path="/subscribers">
+            <Subscribers />
           </Route> */}
 
           <Route path="/users">

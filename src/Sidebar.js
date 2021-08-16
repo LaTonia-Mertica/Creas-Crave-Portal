@@ -1,4 +1,9 @@
+import { useAuth0 } from "@auth0/auth0-react";
+
 const Sidebar = ({ type }) => {
+  const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
+    useAuth0();
+
   let links = [];
   if (type === "cart") {
     links = [
@@ -54,8 +59,17 @@ const Sidebar = ({ type }) => {
                     style={{
                       backgroundColor: "#c8c4bd",
                       padding: 37,
+                      // color: "#808080",
+                      color: `links.indexOf(li) < [0] ? "#808080" : "black"`,
                     }}
                     href={link.destination}
+                    onClick={() => {
+                      if (link.label === "logout") {
+                        logout();
+                        console.log(isAuthenticated);
+                      }
+                    }}
+                    // style={{'backgroundColor': hours2.indexOf(item) > -1 ? 'yellow' : 'pink'}}
                   >
                     {link.label}
                   </li>

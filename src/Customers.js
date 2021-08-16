@@ -2,12 +2,19 @@ import NavbarBackend from "./NavbarBackend";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import { useState, useRef } from "react";
-
+import { useAuth0 } from "@auth0/auth0-react";
 // let allCustomers;
 const Customers = ({ links }) => {
+  const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
+    useAuth0();
+
   const [customers, setCustomers] = useState(null);
   const table = useRef(null);
   const [zipCode, setZipCode] = useState("");
+
+  if (!isAuthenticated) {
+    loginWithRedirect();
+  }
 
   const addCustomer = async (event) => {
     event.preventDefault();
