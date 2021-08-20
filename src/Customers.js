@@ -321,7 +321,7 @@ const Customers = ({ links }) => {
                     border: "none",
                   }}
                 >
-                  UPDATE MY ACCOUNT
+                  CREATE/UPDATE ACCOUNT
                 </button>
               </div>
             </div>

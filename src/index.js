@@ -12,6 +12,7 @@ ReactDOM.render(
       domain="creas-crave-portal.us.auth0.com"
       clientId="A3LeKz5dCdycabJGPKADPi9X5iMox2oa"
       redirectUri={window.location.origin}
+      audience="https://creas-crave-backend.herokuapp.com/"
       scope="read:current_user"
     >
       <App />

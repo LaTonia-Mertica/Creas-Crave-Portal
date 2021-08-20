@@ -59,8 +59,6 @@ const Sidebar = ({ type }) => {
                     style={{
                       backgroundColor: "#c8c4bd",
                       padding: 37,
-                      // color: "#808080",
-                      color: `links.indexOf(li) < [0] ? "#808080" : "black"`,
                     }}
                     href={link.destination}
                     onClick={() => {
