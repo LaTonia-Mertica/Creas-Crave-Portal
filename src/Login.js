@@ -1,6 +1,6 @@
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import { Link, useHistory } from "react-router-dom";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import axios from "axios";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect, useState } from "react";
@@ -57,7 +57,7 @@ function Login() {
 
   return (
     <div id="mainLoginReturnDiv" style={{ marginTop: -44 }}>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="container-fluid" style={{ marginBottom: 87 }}>
         <div className="row">
           <h1>ID TOKEN</h1>
@@ -122,7 +122,7 @@ function Login() {
             </form> */}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
   // };

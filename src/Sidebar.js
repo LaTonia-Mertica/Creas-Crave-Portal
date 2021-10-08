@@ -1,4 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ type }) => {
   const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
@@ -7,7 +8,7 @@ const Sidebar = ({ type }) => {
   let links = [];
   if (type === "cart") {
     links = [
-      { label: "purchase history", destination: "/purchaseHistory" },
+      { label: "purchase history", destination: "/purchases" },
       { label: "favorite creatives", destination: "/favoriteCreatives" },
       { label: "items in cart", destination: "/itemsInCart" },
       { label: "delete account", destination: "/deleteAccount" },
@@ -53,7 +54,7 @@ const Sidebar = ({ type }) => {
           >
             {links.map((link) => {
               return (
-                <>
+                <Link to={link.destination}>
                   <li
                     className="list-group-item"
                     style={{
@@ -71,7 +72,7 @@ const Sidebar = ({ type }) => {
                   >
                     {link.label}
                   </li>
-                </>
+                </Link>
               );
             })}
           </ul>

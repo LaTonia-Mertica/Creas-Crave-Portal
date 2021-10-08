@@ -10,7 +10,8 @@ import Disclaimer from "./Disclaimer";
 import Favorites from "./Favorites";
 import Footer from "./Footer";
 import Login from "./Login";
-import NavbarBackend from "./NavbarBackend";
+// import NavbarBackend from "./NavbarBackend";
+import Navbar from "./Navbar";
 import Purchases from "./Purchases";
 import Sidebar from "./Sidebar";
 // import Subscribers from "./Subscribers";
@@ -19,6 +20,7 @@ import Users from "./Users";
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Router>
         <Switch>
           <Route path="/cart">
@@ -41,21 +43,21 @@ function App() {
             <Customers />
           </Route>
 
-          <Route path="/disclaimer">
+          {/* <Route path="/disclaimer">
             <Disclaimer />
-          </Route>
+          </Route> */}
 
           <Route path="/favorites">
             <Favorites />
           </Route>
 
-          <Route path="/footer">
+          {/* <Route path="/footer">
             <Footer />
-          </Route>
+          </Route> */}
 
-          <Route path="/navbarbackend">
+          {/* <Route path="/navbarbackend">
             <NavbarBackend />
-          </Route>
+          </Route> */}
 
           <Route path="/purchases">
             <Purchases />
@@ -130,6 +132,8 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Disclaimer />
+      <Footer />
     </div>
   );
 }

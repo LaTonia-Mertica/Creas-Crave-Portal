@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+// import Navbar from "./Navbar";
+// import Footer from "./Footer";
 import { useState, useRef } from "react";
 
 // let allCustomers;
@@ -56,7 +56,7 @@ const CreateAccount = ({ links }) => {
       className="container-fluid"
       style={{ marginTop: -44, backgroundColor: "#545454" }}
     >
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="row">
         <div style={{ marginLeft: 110 }}>
           <form onSubmit={addCustomer}>
@@ -318,8 +318,7 @@ const CreateAccount = ({ links }) => {
           </form>
         </div>
       </div>
-
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -1,12 +1,10 @@
 import { useEffect, useState, useRef } from "react";
 
 const Subscribers = () => {
-  return (<div>Subscribers Page</div>)
-}export default Subscribers
+  return <div>Subscribers Page</div>;
+};
 
-
-
-
+export default Subscribers;
 
 // // let Subscribers;
 // const Subscribers = () => {

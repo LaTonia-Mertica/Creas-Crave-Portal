@@ -1,20 +1,21 @@
-import NavbarBackend from "./NavbarBackend";
+// import NavbarBackend from "./NavbarBackend";
 import Sidebar from "./Sidebar";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import { useState, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 // let allCustomers;
 const Customers = ({ links }) => {
-  const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
-    useAuth0();
+  // const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
+  // useAuth0();
 
+  const [firstName, setFirstName] = useState("");
   const [customers, setCustomers] = useState(null);
   const table = useRef(null);
   const [zipCode, setZipCode] = useState("");
 
-  if (!isAuthenticated) {
-    loginWithRedirect();
-  }
+  // if (!isAuthenticated) {
+  //   loginWithRedirect();
+  // }
 
   const addCustomer = async (event) => {
     event.preventDefault();
@@ -64,7 +65,7 @@ const Customers = ({ links }) => {
       className="container-fluid"
       style={{ marginTop: -44, backgroundColor: "#545454" }}
     >
-      <NavbarBackend />
+      {/* <NavbarBackend /> */}
       <div>
         <Sidebar type="cart" />
       </div>
@@ -85,6 +86,10 @@ const Customers = ({ links }) => {
                   required
                   tabIndex="1"
                   placeholder="first name"
+                  value={firstName}
+                  onChange={(evt) => {
+                    setFirstName(evt.target.value);
+                  }}
                 />
               </div>
 
@@ -328,8 +333,6 @@ const Customers = ({ links }) => {
           </form>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };
