@@ -1,16 +1,20 @@
 # Creas Crave Portal
-*part of full stack project using express, body-parser, cors, middleware, sequelize, models, endpoints, openWeatherAPI, and process.env.PORT for dynamic port with port 4400 backup ... required modest work in package.json (i.e. add engines)*
+*part of full stack project using components each as a separate component file - Cart, Creatives, CreativesInCart, Customers, Favorites, Subscribers, and Users ... db.js orchestrates functionality of models/components ...and App.js maps routes aka endpoints - note: best practice to have default/base route such as /Login at end of routes listed with more specific routes such as /customers listed before it to avoid router misreading endpoints i.e. stopping at '/' when needs to complete full path*
 <br>
 <br>
 **HOW WORKS**
 - these models manage user-inputted/activated content - database aka db, Cart, CreateAccount, Creatives, CreativesInCart, Customers, Favorites, Login, Purchases, Subscribers, and Users (all capitalized per React App components)<br>
-- these models design presentation of component content - Disclaimer, Footer, Navbar, NavbarBackend, and Sidebar
+- these models design presentation of component content - Disclaimer, Footer, Navbar, NavbarBackend, and Sidebar<br>
 - Login.js implements useAuth0, useEffect, useState, useHistory(), and async/await with if/else statements to authenticate<br>
-- App.js implements page pathways and endpoint routes, including globally scoped routes to avoid re-rendering upon load (i.e. navbar; footer)  
+- index.js houses Auth0Provider tags to implement 3rd-party authentication/authorization aka authn/authz<br>
+- App.js implements page pathways and endpoint routes, including globally scoped routes to avoid re-rendering upon load (i.e. navbar; footer)<br>
+
+**NOTE** the magic of components is their nature/function of reusability<br> 
 
 **NEXT STEP** <br>
 1. fully wire portal to backend
-2. maintain full stack code
+2. provide option to login using Auth0 or Creas Crave login page
+3. maintain full stack code
 
 ###### <a href="https://www.latoniamertica.dev/creas-crave-capstone/" target="_blank">visit Creas Crave Capstone Powered by This Portal by La'Tonia Mertica</a>
 <br>
