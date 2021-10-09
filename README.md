@@ -7,7 +7,8 @@
 - these models design presentation of component content - Disclaimer, Footer, Navbar, NavbarBackend, and Sidebar<br>
 - Login.js implements useAuth0, useEffect, useState, useHistory(), and async/await with if/else statements to authenticate<br>
 - index.js houses Auth0Provider tags to implement 3rd-party authentication/authorization aka authn/authz<br>
-- App.js implements page pathways and endpoint routes, including globally scoped routes to avoid re-rendering upon load (i.e. navbar; footer)<br>
+- App.js implements page pathways and endpoint routes, including globally scoped routes to avoid re-rendering upon load (i.e. navbar; footer) - *plus* uses HashRouter to replace BrowserRouter to force accurate endpoints in browser<br>
+###### <a href="https://stackoverflow.com/questions/51974369/what-is-the-difference-between-hashrouter-and-browserrouter-in-react">read about hashrouter versus browserrouter</a>
 
 **NOTE** the magic of components is their nature/function of reusability<br> 
 
