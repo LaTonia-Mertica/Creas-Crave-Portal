@@ -1,21 +1,21 @@
 # Creas Crave Portal
-*part of full stack project using components each as a separate component file - Cart, Creatives, CreativesInCart, Customers, Favorites, Subscribers, and Users ... db.js orchestrates functionality of models/components ...and App.js maps routes aka endpoints - note: best practice to have default/base route such as /Login at end of routes listed with more specific routes such as /customers listed before it to avoid router misreading endpoints i.e. stopping at '/' when needs to complete full path*
+*part of full stack project using components each as a separate component file - Cart, Creatives, CreativesInCart, Customers, Favorites, Subscribers, and Users ... db.js to orchestrate functionality of models/components ...and App.js to map routes aka endpoints - note: best practice to have default/base route such as /Login at end of routes listed with more specific routes such as /customers listed before it to avoid router misreading endpoints i.e. stopping at '/' when needs to complete full path*
 <br>
 <br>
 **HOW WORKS**
 - these models manage user-inputted/activated content - database aka db, Cart, CreateAccount, Creatives, CreativesInCart, Customers, Favorites, Login, Purchases, Subscribers, and Users (all capitalized per React App components)<br>
-- these models design presentation of component content - Disclaimer, Footer, Navbar, NavbarBackend, and Sidebar<br>
+- these models design presentation of component-specific content - Disclaimer, Footer, Navbar, NavbarBackend, and Sidebar<br>
 - Login.js implements useAuth0, useEffect, useState, useHistory(), and async/await with if/else statements to authenticate<br>
 - index.js houses Auth0Provider tags to implement 3rd-party authentication/authorization aka authn/authz<br>
-- App.js implements page pathways and endpoint routes, including globally scoped routes to avoid re-rendering upon load (i.e. navbar; footer) - *plus* uses HashRouter to replace BrowserRouter to force accurate endpoints in browser<br>
+- App.js implements page pathways and endpoint routes, including globally scoped routes to avoid re-rendering upon load (i.e. navbar; disclaimer; footer) - *plus* uses HashRouter to replace BrowserRouter to force accurate endpoints in browser<br>
 ###### <a href="https://stackoverflow.com/questions/51974369/what-is-the-difference-between-hashrouter-and-browserrouter-in-react">read about hashrouter versus browserrouter</a>
-
-**NOTE** the magic of components is their nature/function of reusability<br> 
 
 **NEXT STEP** <br>
 1. fully wire portal to backend
 2. provide option to login using Auth0 or Creas Crave login page
 3. maintain full stack code
+
+**NOTE:** the magic of components is their nature/function of reusability<br> 
 
 ###### <a href="https://www.latoniamertica.dev/creas-crave-capstone/" target="_blank">visit Creas Crave Capstone Powered by This Portal by La'Tonia Mertica</a>
 <br>
