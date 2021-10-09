@@ -1,4 +1,16 @@
 # Creas Crave Portal
+*part of full stack project using express, body-parser, cors, middleware, sequelize, models, endpoints, openWeatherAPI, and process.env.PORT for dynamic port with port 4400 backup ... required modest work in package.json (i.e. add engines)*
+<br>
+<br>
+**HOW WORKS**
+- these models manage user-inputted/activated content - database aka db, Cart, CreateAccount, Creatives, CreativesInCart, Customers, Favorites, Login, Purchases, Subscribers, and Users (all capitalized per React App components)<br>
+- these models design presentation of component content - Disclaimer, Footer, Navbar, NavbarBackend, and Sidebar
+- Login.js implements useAuth0, useEffect, useState, useHistory(), and async/await with if/else statements to authenticate<br>
+- App.js implements page pathways and endpoint routes, including globally scoped routes to avoid re-rendering upon load (i.e. navbar; footer)  
+
+**NEXT STEP** <br>
+1. fully wire portal to backend
+2. maintain full stack code
 
 ###### <a href="https://www.latoniamertica.dev/creas-crave-capstone/" target="_blank">visit Creas Crave Capstone Powered by This Portal by La'Tonia Mertica</a>
 <br>
@@ -25,8 +37,8 @@ Still, it involves vigorous exceptional communication - and, coding is now part 
 <br>
 <br>
 <p align="center"><img src="images/latoniamertica-gawk.png" width="100%" /title="Selfie by La'Tonia Mertica" ></p>
-
 <br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
