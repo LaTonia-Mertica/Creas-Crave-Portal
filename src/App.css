@@ -161,3 +161,8 @@ li.list-group-item:hover {
   color: #5ce1e6;
   cursor: pointer;
 }
+
+/* STYLES FOR CART PAGE */
+#cartPgBlankText {
+  text-align: center;
+}

@@ -1,12 +1,15 @@
 // import NavbarBackend from "./NavbarBackend";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 // import Footer from "./Footer";
+
+import PageBlank from "./PageBlank";
 
 const Favorites = () => {
   return (
-    <div style={{ backgroundColor: "#545454", marginTop: -44 }}>
+    <div>
       {/* <NavbarBackend /> */}
-      <Sidebar type="cart" />
+      {/* <Sidebar type="cart" /> */}
+      <PageBlank />
       {/* <Footer /> */}
     </div>
   );

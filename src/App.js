@@ -1,21 +1,23 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Cart from "./Cart";
-import Creatives from "./Creatives";
-import CreateAccount from "./CreateAccount";
+// import Cart from "./Cart";
+// import Creatives from "./Creatives";
+// import CreateAccount from "./CreateAccount";
 import CreativesInCart from "./CreativesInCart";
 import Customers from "./Customers";
+import DeleteAccount from "./DeleteAccount";
 import Disclaimer from "./Disclaimer";
 import Favorites from "./Favorites";
 import Footer from "./Footer";
+// import PageBlank from "./PageBlank";
 import Login from "./Login";
 // import NavbarBackend from "./NavbarBackend";
 import Navbar from "./Navbar";
-import Purchases from "./Purchases";
+import PurchaseHistory from "./PurchaseHistory";
 import Sidebar from "./Sidebar";
 // import Subscribers from "./Subscribers";
-import Users from "./Users";
+// import Users from "./Users";
 
 function App() {
   return (
@@ -23,16 +25,20 @@ function App() {
       <Navbar />
       <Router>
         <Switch>
-          <Route path="/cart">
+          {/* <Route path="/cart">
             <Cart />
-          </Route>
+          </Route> */}
 
-          <Route path="/createaccount">
+          {/* <Route path="/createaccount">
             <CreateAccount />
-          </Route>
+          </Route> */}
 
-          <Route path="/creatives">
+          {/* <Route path="/creatives">
             <Creatives />
+          </Route> */}
+
+          <Route path="/deleteaccount">
+            <DeleteAccount />
           </Route>
 
           <Route path="/creativesincart">
@@ -47,7 +53,7 @@ function App() {
             <Disclaimer />
           </Route> */}
 
-          <Route path="/favorites">
+          <Route path="/favoritecreatives">
             <Favorites />
           </Route>
 
@@ -59,8 +65,12 @@ function App() {
             <NavbarBackend />
           </Route> */}
 
-          <Route path="/purchases">
-            <Purchases />
+          {/* <Route path="/pageblank">
+            <PageBlank />
+          </Route> */}
+
+          <Route path="/purchasehistory">
+            <PurchaseHistory />
           </Route>
 
           <Route path="/sidebar">
@@ -75,30 +85,30 @@ function App() {
             />
           </Route>
 
-          <Route path="/sidebarcreatives">
+          {/* <Route path="/sidebarcreatives">
             <Sidebar
-            // links={[
-            //   "customers",
-            //   "purchases",
-            //   "favorites",
-            //   "abandoned carts",
-            //   "logout",
-            // ]}
+            links={[
+              "customers",
+              "purchases",
+              "favorites",
+              "abandoned carts",
+              "logout",
+            ]}
             />
-          </Route>
+          </Route> */}
 
-          <Route path="/sidebarpurchases">
+          {/* <Route path="/sidebarpurchases">
             <Sidebar
-            // links={[
-            //   "customers",
-            //   "creatives sold",
-            //   "sales amounts",
-            //   "sold dates",
-            //   "logout",
-            //   ,
-            // ]}
+            links={[
+              "customers",
+              "creatives sold",
+              "sales amounts",
+              "sold dates",
+              "logout",
+              ,
+            ]}
             />
-          </Route>
+          </Route> */}
 
           {/* <Route path="/sidebar">
             <Sidebar
@@ -123,9 +133,9 @@ function App() {
             <Subscribers />
           </Route> */}
 
-          <Route path="/users">
+          {/* <Route path="/users">
             <Users />
-          </Route>
+          </Route> */}
 
           <Route path="/">
             <Login />

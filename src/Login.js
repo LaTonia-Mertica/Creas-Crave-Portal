@@ -45,7 +45,19 @@ function Login() {
   }, [accessToken]);
 
   if (isLoading) {
-    return <p>Processing your request ...</p>;
+    return (
+      <p
+        style={{
+          textAlign: "center",
+          marginTop: 187,
+          marginBottom: 144,
+          fontSize: "medium",
+          fontFamily: "fantasy",
+        }}
+      >
+        ... entertaining to your request ...
+      </p>
+    );
   }
 
   console.log(isLoading, isAuthenticated);

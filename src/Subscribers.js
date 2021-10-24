@@ -1,7 +1,9 @@
 import { useEffect, useState, useRef } from "react";
+import PageBlank from "./PageBlank";
 
 const Subscribers = () => {
-  return <div>Subscribers Page</div>;
+  // return <div>Subscribers Page</div>;
+  <PageBlank />;
 };
 
 export default Subscribers;

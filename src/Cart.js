@@ -1,12 +1,13 @@
 // import NavbarBackend from "./NavbarBackend";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
+import PageBlank from "./PageBlank";
 // import Footer from "./Footer";
 
 const Cart = () => {
   return (
-    <div style={{ backgroundColor: "#545454", marginTop: -44 }}>
+    <div>
       {/* <NavbarBackend /> */}
-      <Sidebar type="cart" />
+      <PageBlank />
       {/* <Footer /> */}
     </div>
   );

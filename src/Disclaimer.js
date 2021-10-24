@@ -1,6 +1,9 @@
 const Disclaimer = () => {
   return (
-    <div className="row disclaimer" style={{ backgroundColor: "#c8c4bd" }}>
+    <div
+      className="row disclaimer"
+      style={{ backgroundColor: "#c8c4bd", marginTop: 4 }}
+    >
       <p>
         <h1
           style={{

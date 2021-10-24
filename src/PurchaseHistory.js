@@ -1,13 +1,15 @@
 // import NavbarBackend from "./NavbarBackend";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 // import Disclaimer from "./Disclaimer";
 // import Footer from "./Footer";
 
-const Purchases = () => {
+import PageBlank from "./PageBlank";
+
+const PurchaseHistory = () => {
   return (
     <div
-      className="container-fluid"
-      style={{ marginTop: -44, backgroundColor: "#545454" }}
+    // className="container-fluid"
+    // style={{ marginTop: -44, backgroundColor: "#545454" }}
     >
       {/* <div className="btn-group">
         <button
@@ -23,13 +25,15 @@ const Purchases = () => {
       </div> */}
 
       {/* <NavbarBackend /> */}
-      <Sidebar type="purchases" className="col-4" />
-      <div className="row">
-        <div className="col-8" style={{ marginBottom: 22 }}></div>
-      </div>
+      {/* <Sidebar type="purchases" className="col-4" /> */}
+      {/* <div className="row">
+        <div className="col-8"></div>
+      </div> */}
+
+      <PageBlank />
 
       {/* <Disclaimer /> */}
     </div>
   );
 };
-export default Purchases;
+export default PurchaseHistory;

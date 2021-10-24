@@ -1,24 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react";
-import Login from "./Login";
+// import Login from "./Login";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Auth0Provider
+    <Auth0Provider
       domain="creas-crave-portal.us.auth0.com"
       clientId="A3LeKz5dCdycabJGPKADPi9X5iMox2oa"
       redirectUri={window.location.origin}
       audience="https://creas-crave-backend.herokuapp.com/"
       // audience="http://localhost:3001/"
       scope="read:current_user"
-    >
-      <App />
-    </Auth0Provider> */}
-    <App />
+    ></Auth0Provider>
+    {/* <App /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

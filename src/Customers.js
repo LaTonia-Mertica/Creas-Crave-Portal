@@ -5,17 +5,25 @@ import { useState, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 // let allCustomers;
 const Customers = ({ links }) => {
-  // const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
-  // useAuth0();
+  const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
+    useAuth0();
 
   const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [address1, setAddress1] = useState("");
+  const [address2, setAddress2] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [zipCode, setZipCode] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
+
   const [customers, setCustomers] = useState(null);
   const table = useRef(null);
-  const [zipCode, setZipCode] = useState("");
 
-  // if (!isAuthenticated) {
-  //   loginWithRedirect();
-  // }
+  if (!isAuthenticated) {
+    loginWithRedirect();
+  }
 
   const addCustomer = async (event) => {
     event.preventDefault();
@@ -63,13 +71,13 @@ const Customers = ({ links }) => {
   return (
     <div
       className="container-fluid"
-      style={{ marginTop: -44, backgroundColor: "#545454" }}
+      style={{ marginTop: 67, backgroundColor: "#545454" }}
     >
       {/* <NavbarBackend /> */}
       <div>
         <Sidebar type="cart" />
       </div>
-      <div className="row" style={{ marginLeft: 325 }}>
+      <div className="row" style={{ marginLeft: 425 }}>
         <div>
           <form onSubmit={addCustomer}>
             <div className="row" style={{ marginTop: -425 }}>
@@ -87,8 +95,8 @@ const Customers = ({ links }) => {
                   tabIndex="1"
                   placeholder="first name"
                   value={firstName}
-                  onChange={(evt) => {
-                    setFirstName(evt.target.value);
+                  onChange={(event) => {
+                    setFirstName(event.target.value);
                   }}
                 />
               </div>
@@ -106,6 +114,10 @@ const Customers = ({ links }) => {
                   required
                   tabIndex="2"
                   placeholder="last name"
+                  value={lastName}
+                  onChange={(event) => {
+                    setLastName(event.target.value);
+                  }}
                 />
               </div>
             </div>
@@ -125,6 +137,10 @@ const Customers = ({ links }) => {
                     required
                     tabIndex="3"
                     placeholder="address1"
+                    value={address1}
+                    onChange={(event) => {
+                      setAddress1(event.target.value);
+                    }}
                   />
                 </div>
               </div>
@@ -144,6 +160,10 @@ const Customers = ({ links }) => {
                     id="address2"
                     tabIndex="4"
                     placeholder="address2"
+                    value={address2}
+                    onChange={(event) => {
+                      setAddress2(event.target.value);
+                    }}
                   />
                 </div>
               </div>
@@ -164,6 +184,10 @@ const Customers = ({ links }) => {
                     required
                     tabIndex="5"
                     placeholder="city"
+                    value={city}
+                    onChange={(event) => {
+                      setCity(event.target.value);
+                    }}
                   />
                 </div>
               </div>
@@ -182,6 +206,10 @@ const Customers = ({ links }) => {
                     required
                     tabIndex="6"
                     placeholder="state"
+                    value={state}
+                    onChange={(event) => {
+                      setState(event.target.value);
+                    }}
                   >
                     <option></option>
                     <option>AL</option>
@@ -284,6 +312,10 @@ const Customers = ({ links }) => {
                       )}) ${num.substring(3, 6)}-${num.substring(6)}`;
                     }
                   }}
+                  value={phoneNumber}
+                  onChange={(event) => {
+                    setPhoneNumber(event.target.value);
+                  }}
                 />
               </div>
             </div>
@@ -302,6 +334,10 @@ const Customers = ({ links }) => {
                   required
                   tabIndex="9"
                   placeholder="email address"
+                  value={emailAddress}
+                  onChange={(event) => {
+                    setEmailAddress(event.target.value);
+                  }}
                 />
               </div>
             </div>
@@ -310,6 +346,8 @@ const Customers = ({ links }) => {
               <div className="col text-center">
                 <button
                   type="submit"
+                  value="submit"
+                  // onclick="submitForm()"
                   className="btn btn-primary"
                   style={{
                     fontSize: 21,
@@ -317,6 +355,7 @@ const Customers = ({ links }) => {
                     marginTop: -67,
                     marginLeft: 400,
                     marginRight: 150,
+                    marginBottom: 137,
                     paddingTop: 17,
                     paddingBottom: 17,
                     paddingLeft: 37,
@@ -324,9 +363,10 @@ const Customers = ({ links }) => {
                     letterSpacing: 1,
                     backgroundColor: "#5ce1e6",
                     border: "none",
+                    boxShadow: "none",
                   }}
                 >
-                  CREATE/UPDATE ACCOUNT
+                  UPDATE/CREATE
                 </button>
               </div>
             </div>
