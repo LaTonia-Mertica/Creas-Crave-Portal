@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import App from "./App";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react";
 // import Login from "./Login";
@@ -15,8 +15,9 @@ ReactDOM.render(
       audience="https://creas-crave-backend.herokuapp.com/"
       // audience="http://localhost:3001/"
       scope="read:current_user"
-    ></Auth0Provider>
-    {/* <App /> */}
+    >
+      <App />
+    </Auth0Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
