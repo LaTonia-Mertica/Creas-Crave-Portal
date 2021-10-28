@@ -5,8 +5,8 @@ import { useState, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 // let allCustomers;
 const Customers = ({ links }) => {
-  const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
-    useAuth0();
+  // const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
+  //   useAuth0();
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -21,9 +21,9 @@ const Customers = ({ links }) => {
   const [customers, setCustomers] = useState(null);
   const table = useRef(null);
 
-  if (!isAuthenticated) {
-    loginWithRedirect();
-  }
+  // if (!isAuthenticated) {
+  //   loginWithRedirect();
+  // }
 
   const addCustomer = async (event) => {
     event.preventDefault();

@@ -55,7 +55,7 @@ function Login() {
           fontFamily: "fantasy",
         }}
       >
-        ... entertaining to your request ...
+        ... entertaining your request ...
       </p>
     );
   }

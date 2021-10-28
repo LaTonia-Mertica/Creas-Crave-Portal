@@ -12,7 +12,7 @@ const Sidebar = ({ type }) => {
       { label: "favorite creatives", destination: "/favoritecreatives" },
       { label: "creatives in cart", destination: "/creativesincart" },
       { label: "delete account", destination: "/deleteaccount" },
-      { label: "logout", destination: "/logout" },
+      { label: "logout", destination: "./Login" },
     ];
   } else if (type === "creatives") {
     links = [
