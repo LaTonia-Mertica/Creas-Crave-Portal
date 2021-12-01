@@ -68,6 +68,7 @@ const Sidebar = ({ type }) => {
                         logout({
                           returnTo:
                             "https://www.latoniamertica.dev/creas-crave-capstone/",
+                          clientID: "A3LeKz5dCdycabJGPKADPi9X5iMox2oa",
                         });
                         console.log(isAuthenticated);
                       }
