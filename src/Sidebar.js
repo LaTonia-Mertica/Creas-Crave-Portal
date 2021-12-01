@@ -65,7 +65,10 @@ const Sidebar = ({ type }) => {
                     href={link.destination}
                     onClick={() => {
                       if (link.label === "logout") {
-                        logout();
+                        logout({
+                          returnTo:
+                            "https://www.latoniamertica.dev/creas-crave-capstone/",
+                        });
                         console.log(isAuthenticated);
                       }
                     }}
