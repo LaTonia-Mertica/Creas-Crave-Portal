@@ -16,10 +16,32 @@ import Login from "./Login";
 import Navbar from "./Navbar";
 import PurchaseHistory from "./PurchaseHistory";
 import Sidebar from "./Sidebar";
+import { useWindowWidth } from "@react-hook/window-size";
+import lmDevLogo from "./images/lmDevLogo.png";
+
 // import Subscribers from "./Subscribers";
 // import Users from "./Users";
 
 function App() {
+  const width = useWindowWidth();
+
+  if (width < 1300) {
+    return (
+      <div className="increaseScreen">
+        <h1>more space please</h1>
+        <h2>
+          current screen size is smaller
+          <br />
+          than the screen size needed.
+          <br />
+          please expand the window.
+          <br />
+          or use larger device/screen.
+        </h2>
+        <img src={lmDevLogo} />
+      </div>
+    );
+  }
   return (
     <div className="App">
       <Navbar />

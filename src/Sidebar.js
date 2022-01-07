@@ -33,7 +33,7 @@ const Sidebar = ({ type }) => {
   }
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid regularView">
       <div className="row">
         <div
           className="col"

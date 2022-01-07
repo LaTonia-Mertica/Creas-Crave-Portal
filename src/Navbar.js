@@ -4,7 +4,7 @@
 const NavBar = () => {
   return (
     <div className="container-fluid">
-      <div className="row">
+      <div className="row regularView">
         <nav className="navbar navbar-expand-lg fixed-top navbar-light bglmccsblue">
           <div className="container-fluid">
             {/* <a className="navbar-brand" href={{ NavBar }}> */}
