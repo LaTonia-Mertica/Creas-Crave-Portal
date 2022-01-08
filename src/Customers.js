@@ -2,11 +2,11 @@
 import Sidebar from "./Sidebar";
 // import Footer from "./Footer";
 import { useState, useRef } from "react";
-// import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth0 } from "@auth0/auth0-react";
 // let allCustomers;
 const Customers = ({ links }) => {
-  // const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
-  //   useAuth0();
+  const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
+    useAuth0();
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
